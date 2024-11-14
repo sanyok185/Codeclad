@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-	<title>HomePage</title>
+	<title>CODECLAD</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241113150113">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241114221121">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,22 +16,22 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="" class="header__logo">
+				<a href="/" class="header__logo">
 					<img src="img/logo.svg" alt="Logo">
 					<img src="img/logo_light.svg" alt="Logo">
 				</a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Home</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Our Approach</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Case Studies</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Support plans</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Why Codeclad?</a></li>
+							<li class="menu__item"><a href="/" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#approach">Our Approach</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#cases">Case Studies</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#plans">Support plans</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#why">Why Codeclad?</a></li>
 						</ul>
 					</nav>
 				</div>
-				<a href="" class="header__button button" data-da=".menu__body, 991.98">Get in Touch</a>
+				<a data-popup="#form" href="" class="header__button button" data-da=".menu__body, 991.98">Get in Touch</a>
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
 			</div>
 		</header>
@@ -53,7 +53,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__approach approach">
+			<section class="page__approach approach" id="approach">
 				<div class="approach__container">
 					<h2 class="approach__title title">
 						Individual approach that delivers results
@@ -145,7 +145,8 @@
 						</div>
 					</div>
 				</div>
-				<img src="img/Approach/line.svg" alt="Image" class="approach__line">
+				<img src="img/Approach/line.svg" alt="Line" class="approach__line approach__line--pc">
+				<img src="img/Approach/line-mobile.svg" alt="Line" class="approach__line approach__line--mobile">
 			</section>
 			<section class="page__cases cases" id="cases">
 				<div class="cases__container">
@@ -194,15 +195,100 @@
 								</ul>
 								<button hidden data-showmore-button type="button" class="item-cases__more _icon-arrow">Learn more</button>
 							</div>
-							<div class="item-cases__site">
-								<div class="item-cases__baner"><img src="img/Cases/01.webp" alt="Image"></div>
-								<!-- <iframe  src="https://www.codeclad.com/portfolio/sparkable" frameborder="0"></iframe> -->
-								<div class="item-cases__scroll">
-									<img src="img/Cases/itemit/01.webp" alt="Image">
-									<img src="img/Cases/itemit/02.webp" alt="Image">
-									<img src="img/Cases/itemit/03.webp" alt="Image">
-									<img src="img/Cases/itemit/04.webp" alt="Image">
-								</div>
+							<div class="item-cases__baner">
+								<img src="img//Cases/Collages/1_Asset tracking app (item-it).webp" alt="Image">
+								<img src="img/Cases/Mobile/01_mob_asset_tracking_app_(item-it).webp" alt="Image">
+							</div>
+						</div>
+						<div data-showmore="items" class="cases__item item-cases">
+							<div class="item-cases__content">
+								<h3 class="item-cases__name">
+									Charter Airlines Platform
+								</h3>
+								<ul data-showmore-content="1" class="item-cases__list">
+									<li>
+										<h6 class="item-cases__label">
+											Overview
+										</h6>
+										<div class="item-cases__text">
+											A platform designed to streamline and simplify flight documentation for charter airlines
+										</div>
+									</li>
+									<li>
+										<h6 class="item-cases__label">
+											Main Problem
+										</h6>
+										<div class="item-cases__text">
+											The app loaded very slowly, causing user frustration and a diminished experience.
+										</div>
+									</li>
+									<li>
+										<h6 class="item-cases__label">
+											Solutions
+										</h6>
+										<div class="item-cases__text">
+											Database reorganization, API updates, and web application enhancements to boost performance.
+										</div>
+									</li>
+									<li>
+										<h6 class="item-cases__label">
+											Results
+										</h6>
+										<div class="item-cases__text">
+											The application has become several times faster. This makes it work even when the internet is weak, which is important for pilots and crew members.
+										</div>
+									</li>
+								</ul>
+								<button hidden data-showmore-button type="button" class="item-cases__more _icon-arrow">Learn more</button>
+							</div>
+							<div class="item-cases__baner"><img src="img/Cases/Collages/2_AirTrail.webp" alt="Image">
+								<img src="img/Cases/Mobile/02_mob_airtrail.webp" alt="Image">
+							</div>
+						</div>
+						<div data-showmore="items" class="cases__item item-cases">
+							<div class="item-cases__content">
+								<h3 class="item-cases__name">
+									Fintech Startup
+								</h3>
+								<ul data-showmore-content="1" class="item-cases__list">
+									<li>
+										<h6 class="item-cases__label">
+											Overview
+										</h6>
+										<div class="item-cases__text">
+											A platform designed to streamline and simplify flight documentation for charter airlines
+										</div>
+									</li>
+									<li>
+										<h6 class="item-cases__label">
+											Main Problem
+										</h6>
+										<div class="item-cases__text">
+											The app loaded very slowly, causing user frustration and a diminished experience.
+										</div>
+									</li>
+									<li>
+										<h6 class="item-cases__label">
+											Content Platform
+										</h6>
+										<div class="item-cases__text">
+											A platform designed to streamline and simplify flight documentation for charter airlines.
+										</div>
+									</li>
+									<li>
+										<h6 class="item-cases__label">
+											Results
+										</h6>
+										<div class="item-cases__text">
+											The application has become several times faster. This makes it work even when the internet is weak, which is important for pilots and crew members.
+										</div>
+									</li>
+								</ul>
+								<button hidden data-showmore-button type="button" class="item-cases__more _icon-arrow">Learn more</button>
+							</div>
+							<div class="item-cases__baner">
+								<img src="img/Cases/Collages/3_Optim.webp" alt="Image">
+								<img src="img/Cases/Mobile/03_mob_optim.webp" alt="Image">
 							</div>
 						</div>
 						<div data-showmore="items" class="cases__item item-cases">
@@ -246,21 +332,155 @@
 								</ul>
 								<button hidden data-showmore-button type="button" class="item-cases__more _icon-arrow">Learn more</button>
 							</div>
-							<div class="item-cases__site">
-								<div class="item-cases__baner"><img src="img/Cases/01.webp" alt="Image"></div>
-								<!-- <iframe  src="https://www.codeclad.com/portfolio/sparkable" frameborder="0"></iframe> -->
-								<div class="item-cases__scroll">
-									<img src="img/Cases/itemit/01.webp" alt="Image">
-									<img src="img/Cases/itemit/02.webp" alt="Image">
-									<img src="img/Cases/itemit/03.webp" alt="Image">
-									<img src="img/Cases/itemit/04.webp" alt="Image">
-								</div>
+							<div class="item-cases__baner">
+								<img src="img/Cases/Collages/4_sparkable.webp" alt="Image">
+								<img src="img/Cases/Mobile/04_sparkable.webp" alt="Image">
+							</div>
+						</div>
+						<div data-showmore="items" class="cases__item item-cases">
+							<div class="item-cases__content">
+								<h3 class="item-cases__name">
+									Flight Reservation
+								</h3>
+								<ul data-showmore-content="1" class="item-cases__list">
+									<li>
+										<h6 class="item-cases__label">
+											Overview
+										</h6>
+										<div class="item-cases__text">
+											An app that simplifies the process of booking airline tickets.
+										</div>
+									</li>
+									<li>
+										<h6 class="item-cases__label">
+											Main Problem
+										</h6>
+										<div class="item-cases__text">
+											The app loaded very slowly, causing user frustration and a diminished experience.
+										</div>
+									</li>
+									<li>
+										<h6 class="item-cases__label">
+											Solutions
+										</h6>
+										<div class="item-cases__text">
+											Database reorganization, API updates, and web application enhancements to boost performance.
+										</div>
+									</li>
+									<li>
+										<h6 class="item-cases__label">
+											Results
+										</h6>
+										<div class="item-cases__text">
+											The application has become several times faster. This makes it work even when the internet is weak, which is important for pilots and crew members.
+										</div>
+									</li>
+								</ul>
+								<button hidden data-showmore-button type="button" class="item-cases__more _icon-arrow">Learn more</button>
+							</div>
+							<div class="item-cases__baner">
+								<img src="img/Cases/Collages/5_keyflight.webp" alt="Image">
+								<img src="img/Cases/Mobile/05_mob_keyflight.webp" alt="Image">
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="page__contact contact">
+			<div class="page__more more">
+				<div class="more__container">
+					<h2 class="more__title title">
+						Want more details? <br>
+						We've prepared a presentation
+					</h2>
+					<button data-popup="#form" type="more__button button" class="button">Get the presentation</button>
+				</div>
+				<img src="img/More/line-more.svg" alt="Image" class="more__line more__line--pc">
+				<img src="img/More/line-more-mobile.svg" alt="Image" class="more__line more__line--mobile">
+			</div>
+			<section class="page__plans plans" id="plans">
+				<div class="plans__container">
+					<h2 class="plans__title title">
+						Support Plans for Your App
+					</h2>
+					<div class="plans__text">
+						<p>Is your app or website due for improvements or bug fixes? <br> Select a support plan designed around your needs!</p>
+					</div>
+					<div class="plans__items">
+						<div class="plans__item item-plans">
+							<div class="item-plans__time">
+								20 hours
+							</div>
+							<h4 class="item-plans__price">$750</h4>
+							<div class="item-plans__text">
+								Optimal for fixing minor issues
+							</div>
+							<button type="button" class="item-plans__button">
+								Book a Call
+							</button>
+						</div>
+						<div class="plans__item item-plans">
+							<div class="item-plans__time">
+								50 hours
+							</div>
+							<h4 class="item-plans__price">$1850</h4>
+							<div class="item-plans__text">
+								Suitable for short-term tasks and improving functionality
+							</div>
+							<button type="button" class="item-plans__button">
+								Book a Call
+							</button>
+						</div>
+						<div class="plans__item item-plans">
+							<div class="item-plans__time">
+								no value
+							</div>
+							<h4 class="item-plans__price">Custom Plan</h4>
+							<div class="item-plans__text">
+								Tailored hours based on your specific needs
+							</div>
+							<button type="button" class="item-plans__button">
+								Book a Call
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__why why" id="why">
+				<div class="why__container">
+					<h2 class="why__title title">
+						Why Codeclad?
+					</h2>
+					<div class="why__items">
+						<div class="why__item item-why">
+							<div class="item-why__name">
+								Pre-Built Modules
+							</div>
+							<div class="item-why__text">
+								<p>Thanks to our expertise, we have a variety of ready-made components and application modules that can be easily integrated into your project. This significantly reduces development time and costs, ensuring a more efficient and economical process</p>
+							</div>
+						</div>
+						<div class="why__item item-why">
+							<div class="item-why__name">
+								AI tools
+							</div>
+							<div class="item-why__text">
+								<p>We leverage AI tools in non-critical areas, allowing us to reduce labor costs by up to 30%. However, it is essential to emphasize that the development of the application is carried out by a team of experienced professionals, not solely through AI</p>
+							</div>
+						</div>
+						<div class="why__item item-why">
+							<div class="item-why__name">
+								KIS Principle
+							</div>
+							<div class="item-why__text">
+								<p>We strive to adhere to the KIS (Keep It Simple) principle, which allows us to create simple and effective solutions without unnecessary complexity. This ensures ease of use, reliability, and rapid implementation, reducing risks and enhancing the overall quality of the final result</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="img/Why/bg_vector.svg" alt="Image" class="why__bg">
+				<img src="img/Why/bg_vector.svg" alt="Image" class="why__bg why__bg--2">
+			</section>
+			<section class="page__contact contact" id="contact">
 				<div class="contact__container">
 					<h2 class="contact__title title">
 						Contact us!
@@ -306,11 +526,11 @@
 				<div class="footer__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Home</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Our Approach</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Case Studies</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Support plans</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Why Codeclad?</a></li>
+							<li class="menu__item"><a href="/" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#approach">Our Approach</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#cases">Case Studies</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#plans">Support plans</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="#why">Why Codeclad?</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -323,7 +543,34 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241113150113"></script>
+	<div id="form" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close">
+				</button>
+				<div class="popup__images">
+					<a href="" class="popup__logo"><img src="img/logo.svg" alt="Logo"></a>
+					<img src="img/popup_image.svg" alt="Image">
+				</div>
+				<div class="popup__body">
+					<h2 class="popup__title title">
+						Get the Presentation
+					</h2>
+					<div class="popup__text">
+						Enter your info to receive all the details directly in your inbox
+					</div>
+					<form action="" method="POST" class="popup__form form" data-dev>
+						<div class="form__item"><input data-required type="text" name="form[name]" data-error="Full Name is a required field*" placeholder="Full Name*" class="form__input input"></div>
+						<div class="form__item"><input data-required type="text" name="form[profile]" data-error="Linkedin profile is a required field*" placeholder="Linkedin Profile*" class="form__input input"></div>
+						<div class="form__item"><input data-required="email" type="text" name="form[email]" data-error="Email is a required field*" placeholder="Email*" class="form__input input"></div>
+						<button type="submit" class="form__button button">Submit</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20241114221121"></script>
 </body>
 
 </html>
