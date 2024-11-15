@@ -277,6 +277,11 @@ body::after {
   justify-content: center;
   align-items: center
 }
+.popup__title {
+  opacity: 1!important;
+  -webkit-transform: none!important;
+  transform: none!important
+}
 .popup__text {
   text-align: center;
   color: #424242
@@ -587,7 +592,7 @@ body::after {
   transform: translate(0,0)
 }
 .hero__button {
-  transition: all .4s ease .4s;
+  transition: opacity .4s ease .4s transform .4s ease .4s;
   opacity: 0;
   -webkit-transform: translate(-1.5625rem,0);
   transform: translate(-1.5625rem,0)
@@ -835,7 +840,7 @@ body::after {
   gap: 1.875rem
 }
 .more__button {
-  transition: all .5s ease-out .5s;
+  transition: opacity .5s ease-out .5s transform .5s ease-out .5s;
   opacity: 0;
   -webkit-transform: translate(0,.625rem);
   transform: translate(0,.625rem);
@@ -1037,16 +1042,16 @@ body::after {
   transform: translate(0,0)
 }
 .contact__code:nth-child(1) {
-  transition: all .5s ease-out .5s
+  transition: opacity .5s ease-out .5s transform .5s ease-out .5s
 }
 .contact__code:nth-child(2) {
-  transition: all .5s ease-out .6s
+  transition: opacity .5s ease-out transform .5s ease-out .6s
 }
 .contact__code:nth-child(3) {
-  transition: all .5s ease-out .7s
+  transition: opacity .5s ease-out transform .5s ease-out .7s
 }
 .contact__code:nth-child(4) {
-  transition: all .5s ease-out .8s
+  transition: opacity .5s ease-out transform .5s ease-out .8s
 }
 .contact__code img {
   width: 100%
@@ -1144,13 +1149,13 @@ body::after {
     max-width: 19.0625rem
   }
   .contact__list li:nth-child(1) {
-    transition: all .5s ease-out .2s
+    transition: opacity .5s ease-out .2s transform .5s ease-out .2s
   }
   .contact__list li:nth-child(2) {
-    transition: all .5s ease-out .3s
+    transition: opacity .5s ease-out transform .5s ease-out .3s
   }
   .contact__list li:nth-child(3) {
-    transition: all .5s ease-out .4s
+    transition: opacity .5s ease-out transform .5s ease-out .4s
   }
 }
 @media (min-width:61.99875em)and (min-width:90em) {
@@ -1694,7 +1699,7 @@ body::after {
     flex-direction: column
   }
   .contact__list li {
-    transition: all .5s ease-out .2s
+    transition: opacity .5s ease-out transform .5s ease-out .2s
   }
   .contact__code {
     font-size: 1.125rem
