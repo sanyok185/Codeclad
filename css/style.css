@@ -636,6 +636,8 @@ body::after {
 }
 .item-approach {
   opacity: 0;
+  -webkit-transform: translate(-1.25rem,0);
+  transform: translate(-1.25rem,0);
   background-color: #fff;
   cursor: pointer;
   position: relative;
@@ -1088,10 +1090,6 @@ body::after {
   }
   .hero__image img:nth-child(2) {
     display: none
-  }
-  .item-approach {
-    -webkit-transform: translate(-1.5625rem,0);
-    transform: translate(-1.5625rem,0)
   }
   .item-approach:nth-child(1) {
     transition: all .4s ease-out .2s
@@ -1624,7 +1622,9 @@ body::after {
     display: none
   }
   .item-approach {
-    transition: all .4s ease-out .2s
+    transition: all .4s ease-out .2s;
+    -webkit-transform: translate(0,.625rem);
+    transform: translate(0,.625rem)
   }
   .item-cases {
     grid-template-columns: auto
@@ -1699,7 +1699,7 @@ body::after {
     flex-direction: column
   }
   .contact__list li {
-    transition: opacity .5s ease-out transform .5s ease-out .2s
+    transition: opacity .5s ease-out .2s transform .5s ease-out .2s
   }
   .contact__code {
     font-size: 1.125rem
