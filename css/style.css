@@ -400,7 +400,16 @@ body::after {
 }
 .title {
   font-weight: 700;
-  line-height: 1.2
+  line-height: 1.2;
+  transition: all .5s ease-out .1s;
+  opacity: 0;
+  -webkit-transform: translate(-1.5625rem,0);
+  transform: translate(-1.5625rem,0)
+}
+.title._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .header {
   padding-top: .9375rem;
@@ -553,11 +562,40 @@ body::after {
 .hero__title {
   font-weight: 700;
   line-height: 1.2;
-  text-transform: capitalize
+  text-transform: capitalize;
+  transition: all .4s ease;
+  opacity: 0;
+  -webkit-transform: translate(-1.5625rem,0);
+  transform: translate(-1.5625rem,0)
+}
+.hero__title._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .hero__text {
   color: #424242;
-  line-height: 1.2
+  line-height: 1.2;
+  transition: all .4s ease .2s;
+  opacity: 0;
+  -webkit-transform: translate(-1.5625rem,0);
+  transform: translate(-1.5625rem,0)
+}
+.hero__text._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
+.hero__button {
+  transition: all .4s ease .4s;
+  opacity: 0;
+  -webkit-transform: translate(-1.5625rem,0);
+  transform: translate(-1.5625rem,0)
+}
+.hero__button._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .hero__image {
   height: 100%;
@@ -592,6 +630,9 @@ body::after {
   display: grid
 }
 .item-approach {
+  opacity: 0;
+  -webkit-transform: translate(-1.5625rem,0);
+  transform: translate(-1.5625rem,0);
   background-color: #fff;
   cursor: pointer;
   position: relative;
@@ -602,6 +643,11 @@ body::after {
   gap: .625rem;
   align-items: center;
   line-height: 1.2
+}
+.item-approach._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .item-approach.active .item-approach__icon img:nth-child(1) {
   display: none
@@ -659,6 +705,9 @@ body::after {
   background-color: #fff
 }
 .item-cases {
+  opacity: 0;
+  -webkit-transform: translate(0,1.25rem);
+  transform: translate(0,1.25rem);
   overflow: hidden;
   min-height: 18.125rem;
   border: 1px solid #e3e3e3;
@@ -667,6 +716,26 @@ body::after {
   background-color: #fff;
   display: grid;
   grid-template-columns: 50.5% auto
+}
+.item-cases._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
+.item-cases:nth-child(1) {
+  transition: all .5s ease-out .2s
+}
+.item-cases:nth-child(2) {
+  transition: all .5s ease-out .2s
+}
+.item-cases:nth-child(3) {
+  transition: all .5s ease-out .2s
+}
+.item-cases:nth-child(4) {
+  transition: all .5s ease-out .2s
+}
+.item-cases:nth-child(5) {
+  transition: all .5s ease-out .2s
 }
 .item-cases__content {
   position: relative;
@@ -765,8 +834,17 @@ body::after {
   align-items: center;
   gap: 1.875rem
 }
-.more .button {
+.more__button {
+  transition: all .5s ease-out .5s;
+  opacity: 0;
+  -webkit-transform: translate(0,.625rem);
+  transform: translate(0,.625rem);
   white-space: nowrap
+}
+.more__button._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .more__line {
   position: absolute;
@@ -790,7 +868,16 @@ body::after {
 }
 .plans__text {
   max-width: 39.875rem;
-  color: #424242
+  color: #424242;
+  transition: all .5s ease-out .3s;
+  opacity: 0;
+  -webkit-transform: translate(-1.5625rem,0);
+  transform: translate(-1.5625rem,0)
+}
+.plans__text._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .plans__items {
   display: grid;
@@ -798,12 +885,20 @@ body::after {
   grid-template-columns: repeat(auto-fill,minmax(20rem,1fr))
 }
 .item-plans {
+  opacity: 0;
+  -webkit-transform: translate(0,1.25rem);
+  transform: translate(0,1.25rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: .625rem;
   box-shadow: 0 10px 30px -8px rgba(0,0,0,.1);
   padding: 2.5rem 1.875rem
+}
+.item-plans._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .item-plans:nth-child(2) {
   background: #e5f1ff
@@ -866,7 +961,15 @@ body::after {
   gap: 1.5625rem
 }
 .item-why {
+  opacity: 0;
+  -webkit-transform: translate(0,1.25rem);
+  transform: translate(0,1.25rem);
   padding: 2.5rem 0
+}
+.item-why._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .item-why:not(:last-child) {
   border-right: .0625rem solid rgba(0,52,112,.3);
@@ -887,6 +990,16 @@ body::after {
   display: flex;
   flex-direction: column;
   align-items: start
+}
+.contact__list li {
+  opacity: 0;
+  -webkit-transform: translate(-1.25rem,0);
+  transform: translate(-1.25rem,0)
+}
+.contact__list li._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .contact__list a {
   font-weight: 500;
@@ -909,11 +1022,31 @@ body::after {
   width: 100%
 }
 .contact__code {
+  opacity: 0;
+  -webkit-transform: translate(-1.25rem,0);
+  transform: translate(-1.25rem,0);
   display: grid;
   justify-items: center;
   gap: 1.1875rem;
   text-align: center;
   transition: all .3s
+}
+.contact__code._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
+.contact__code:nth-child(1) {
+  transition: all .5s ease-out .5s
+}
+.contact__code:nth-child(2) {
+  transition: all .5s ease-out .6s
+}
+.contact__code:nth-child(3) {
+  transition: all .5s ease-out .7s
+}
+.contact__code:nth-child(4) {
+  transition: all .5s ease-out .8s
 }
 .contact__code img {
   width: 100%
@@ -953,6 +1086,24 @@ body::after {
   .hero__image img:nth-child(2) {
     display: none
   }
+  .item-approach:nth-child(1) {
+    transition: all .4s ease-out .2s
+  }
+  .item-approach:nth-child(2) {
+    transition: all .4s ease-out .3s
+  }
+  .item-approach:nth-child(3) {
+    transition: all .4s ease-out .4s
+  }
+  .item-approach:nth-child(4) {
+    transition: all .4s ease-out .45s
+  }
+  .item-approach:nth-child(5) {
+    transition: all .4s ease-out .55s
+  }
+  .item-approach:nth-child(6) {
+    transition: all .4s ease-out .65s
+  }
   .item-cases__baner img {
     height: 244.482759%;
     top: 50%;
@@ -971,8 +1122,35 @@ body::after {
   .more__line--mobile {
     display: none
   }
+  .item-plans:nth-child(1) {
+    transition: all .5s ease-out .3s
+  }
+  .item-plans:nth-child(2) {
+    transition: all .5s ease-out .4s
+  }
+  .item-plans:nth-child(3) {
+    transition: all .5s ease-out .5s
+  }
+  .item-why:nth-child(1) {
+    transition: all .5s ease-out .3s
+  }
+  .item-why:nth-child(2) {
+    transition: all .5s ease-out .4s
+  }
+  .item-why:nth-child(3) {
+    transition: all .5s ease-out .5s
+  }
   .contact__list {
     max-width: 19.0625rem
+  }
+  .contact__list li:nth-child(1) {
+    transition: all .5s ease-out .2s
+  }
+  .contact__list li:nth-child(2) {
+    transition: all .5s ease-out .3s
+  }
+  .contact__list li:nth-child(3) {
+    transition: all .5s ease-out .4s
   }
 }
 @media (min-width:61.99875em)and (min-width:90em) {
@@ -1438,6 +1616,11 @@ body::after {
   .hero__image img:nth-child(1) {
     display: none
   }
+  .item-approach {
+    transition: all .4s ease-out .2s;
+    -webkit-transform: translate(0,.625rem);
+    transform: translate(0,.625rem)
+  }
   .item-cases {
     grid-template-columns: auto
   }
@@ -1485,11 +1668,15 @@ body::after {
     display: none
   }
   .item-plans {
+    transition: all .5s ease-out .2s;
     padding: 1.875rem 1.25rem
   }
   .why__items {
     gap: 0;
     grid-template-columns: auto
+  }
+  .item-why {
+    transition: all .5s ease-out .2s
   }
   .item-why:last-child {
     padding-bottom: 0
@@ -1505,6 +1692,9 @@ body::after {
   .contact__body {
     gap: 1.875rem;
     flex-direction: column
+  }
+  .contact__list li {
+    transition: all .5s ease-out .2s
   }
   .contact__code {
     font-size: 1.125rem
@@ -1553,7 +1743,7 @@ body::after {
   .item-approach {
     padding: .625rem 1.25rem
   }
-  .more .button {
+  .more__button {
     width: 100%
   }
   .item-plans__button {
