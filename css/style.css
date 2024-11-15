@@ -1149,13 +1149,19 @@ body::after {
     max-width: 19.0625rem
   }
   .contact__list li:nth-child(1) {
-    transition: opacity .5s ease-out .2s transform .5s ease-out .2s
+    transition: opacity .5s ease-out .2s,-webkit-transform .5s ease-out .2s;
+    transition: opacity .5s ease-out .2s,transform .5s ease-out .2s;
+    transition: opacity .5s ease-out .2s,transform .5s ease-out .2s,-webkit-transform .5s ease-out .2s
   }
   .contact__list li:nth-child(2) {
-    transition: opacity .5s ease-out transform .5s ease-out .3s
+    transition: opacity .5s ease-out,-webkit-transform .5s ease-out .3s;
+    transition: opacity .5s ease-out,transform .5s ease-out .3s;
+    transition: opacity .5s ease-out,transform .5s ease-out .3s,-webkit-transform .5s ease-out .3s
   }
   .contact__list li:nth-child(3) {
-    transition: opacity .5s ease-out transform .5s ease-out .4s
+    transition: opacity .5s ease-out,-webkit-transform .5s ease-out .4s;
+    transition: opacity .5s ease-out,transform .5s ease-out .4s;
+    transition: opacity .5s ease-out,transform .5s ease-out .4s,-webkit-transform .5s ease-out .4s
   }
 }
 @media (min-width:61.99875em)and (min-width:90em) {
@@ -1699,7 +1705,9 @@ body::after {
     flex-direction: column
   }
   .contact__list li {
-    transition: opacity .5s ease-out .2s transform .5s ease-out .2s
+    transition: opacity .5s ease-out .2s,-webkit-transform .5s ease-out .2s;
+    transition: opacity .5s ease-out .2s,transform .5s ease-out .2s;
+    transition: opacity .5s ease-out .2s,transform .5s ease-out .2s,-webkit-transform .5s ease-out .2s
   }
   .contact__code {
     font-size: 1.125rem
