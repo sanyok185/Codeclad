@@ -292,13 +292,14 @@ body::after {
   text-align: center;
   color: #424242
 }
+.popup .popup__message {
+  text-align: center;
+  color: #424242
+}
 .form {
   display: grid;
   max-width: 26.0625rem;
   width: 100%
-}
-.form__name {
-  display: flex
 }
 .form__item {
   position: relative;
@@ -1178,25 +1179,28 @@ body::after {
     width: 14.25rem
   }
   .popup__title {
-    margin-bottom: 1.25rem
+    margin-bottom: 1.5625rem
   }
   .popup__text {
+    font-size: .625rem
+  }
+  .popup .popup__message {
     font-size: 1.125rem
   }
-  .popup__text:not(:last-child) {
+  .popup .popup__message:not(:last-child) {
     margin-bottom: 2.5rem
   }
-  .form {
-    gap: 1.25rem
-  }
-  .form__name {
-    gap: 1.25rem
+  .form__item {
+    margin-bottom: 1.25rem
   }
   .form__input {
     height: 2.9375rem
   }
   .form__input {
     font-size: 1rem
+  }
+  .form__button:not(:last-child) {
+    margin-bottom: .625rem
   }
   .form__error {
     font-size: .75rem
@@ -1779,22 +1783,25 @@ body::after {
     margin-bottom: 1rem
   }
   .popup__text {
+    font-size: .5rem
+  }
+  .popup .popup__message {
     font-size: .875rem
   }
-  .popup__text:not(:last-child) {
+  .popup .popup__message:not(:last-child) {
     margin-bottom: 1.25rem
   }
-  .form {
-    gap: 1.125rem
-  }
-  .form__name {
-    gap: 1.125rem
+  .form__item {
+    margin-bottom: 1.125rem
   }
   .form__input {
     height: 2.625rem
   }
   .form__input {
     font-size: .875rem
+  }
+  .form__button:not(:last-child) {
+    margin-bottom: .625rem
   }
   .form__error {
     font-size: .625rem
@@ -2006,25 +2013,28 @@ body::after {
     width: clamp(11.25rem ,10.1612903226rem + 4.8387096774vw ,14.25rem)
   }
   .popup__title {
-    margin-bottom: clamp(1rem ,.9092741935rem + .4032258065vw ,1.25rem)
+    margin-bottom: clamp(1rem ,.7958669355rem + .9072580645vw ,1.5625rem)
   }
   .popup__text {
+    font-size: clamp(.5rem ,.4546370968rem + .2016129032vw ,.625rem)
+  }
+  .popup .popup__message {
     font-size: clamp(.875rem ,.7842741935rem + .4032258065vw ,1.125rem)
   }
-  .popup__text:not(:last-child) {
+  .popup .popup__message:not(:last-child) {
     margin-bottom: clamp(1.25rem ,.7963709677rem + 2.0161290323vw ,2.5rem)
   }
-  .form {
-    gap: clamp(1.125rem ,1.0796370968rem + .2016129032vw ,1.25rem)
-  }
-  .form__name {
-    gap: clamp(1.125rem ,1.0796370968rem + .2016129032vw ,1.25rem)
+  .form__item {
+    margin-bottom: clamp(1.125rem ,1.0796370968rem + .2016129032vw ,1.25rem)
   }
   .form__input {
     height: clamp(2.625rem ,2.5115927419rem + .5040322581vw ,2.9375rem)
   }
   .form__input {
     font-size: clamp(.875rem ,.8296370968rem + .2016129032vw ,1rem)
+  }
+  .form__button:not(:last-child) {
+    margin-bottom: clamp(.625rem ,.625rem + 0 ,.625rem)
   }
   .form__error {
     font-size: clamp(.625rem ,.5796370968rem + .2016129032vw ,.75rem)

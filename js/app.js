@@ -1052,7 +1052,7 @@
                     formSent(form);
                 } else {
                     e.preventDefault();
-                    const url = "https://api.hsforms.com/submissions/v3/integration/submit/141345224/53ecb49b-e5dd-4fe3-8e22-a356b975b08d";
+                    const url = "https://httpbin.org/post";
                     const firstName = document.querySelector('input[name="firstName"]').value;
                     const lastName = document.querySelector('input[name="lastName"]').value;
                     const linkedinProfile = document.querySelector('input[name="formLinkedin"]').value;
@@ -1100,14 +1100,14 @@
                 function updatePopupContent() {
                     const popupBody = document.querySelector(".popup__body");
                     let file = document.getElementById("file");
-                    file.click();
+                    if (file) file.click();
                     const isSmallScreen = window.matchMedia("(max-width: 767.98px)").matches;
                     const popupContent = document.querySelector(".popup__content");
                     if (isSmallScreen) {
-                        popupContent.innerHTML = `\n\t\t\t\t<button data-close type="button" class="popup__close _icon-close">\n\t\t\t</button>\n\t\t\t\t\t<div class="popup__images">\n\t\t\t\t\t\t<div class="popup__header">\n\t\t\t\t\t\t<a href="" class="popup__logo">\n\t\t\t\t\t\t\t<img src="img/logo.svg" alt="Logo">\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<button data-close type="button" class="popup__close _icon-close">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img src="img/popup_image-mob.svg" alt="Image" id=success>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="popup__body">\n\t\t\t\t\t\t<h2 class="popup__title title" data-watch>\n\t\t\t\t\t\t\tSuccess!\n\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t<div class="popup__text">\n\t\t\t\t\t\t\tYour message has been sent. Thank you!\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t`;
+                        popupContent.innerHTML = `\n\t\t\t\t<button data-close type="button" class="popup__close _icon-close">\n\t\t\t</button>\n\t\t\t\t\t<div class="popup__images">\n\t\t\t\t\t\t<div class="popup__header">\n\t\t\t\t\t\t<a href="" class="popup__logo">\n\t\t\t\t\t\t\t<img src="img/logo.svg" alt="Logo">\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<button data-close type="button" class="popup__close _icon-close">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img src="img/popup_image-mob.svg" alt="Image" id=success>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="popup__body">\n\t\t\t\t\t\t<h2 class="popup__title title" data-watch>\n\t\t\t\t\t\t\tSuccess!\n\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t<div class="popup__message">\n\t\t\t\t\t\t\tYour message has been sent. Thank you!\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t`;
                         document.getElementById("success").style.display = "block";
                         popupContent.classList.add("success");
-                    } else popupBody.innerHTML = `\n\t\t\t\t\t<h2 class="popup__title title">\n\t\t\t\t\t\tSuccess!\n\t\t\t\t\t</h2>\n\t\t\t\t\t<div class="popup__text">\n\t\t\t\t\t\tYour message has been sent. Thank you!\n\t\t\t\t\t</div>\n\t\t\t\t`;
+                    } else popupBody.innerHTML = `\n\t\t\t\t\t<h2 class="popup__title title">\n\t\t\t\t\t\tSuccess!\n\t\t\t\t\t</h2>\n\t\t\t\t\t<div class="popup__message">\n\t\t\t\t\t\tYour message has been sent. Thank you!\n\t\t\t\t\t</div>\n\t\t\t\t`;
                 }
                 updatePopupContent();
                 window.addEventListener("resize", updatePopupContent);
