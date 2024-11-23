@@ -289,11 +289,11 @@ body::after {
   transform: none!important
 }
 .popup__text {
-  text-align: center;
-  color: #424242
+  text-align: center
 }
 .popup .popup__message {
-  text-align: center
+  text-align: center;
+  color: #424242
 }
 .form {
   display: grid;
