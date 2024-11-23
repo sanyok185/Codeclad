@@ -293,8 +293,7 @@ body::after {
   color: #424242
 }
 .popup .popup__message {
-  text-align: center;
-  color: #424242
+  text-align: center
 }
 .form {
   display: grid;
