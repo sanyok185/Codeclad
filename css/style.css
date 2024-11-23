@@ -1198,7 +1198,7 @@ body::after {
   .form__input {
     font-size: 1rem
   }
-  .form__button:not(:last-child) {
+  .form__button {
     margin-bottom: .625rem
   }
   .form__error {
@@ -1799,8 +1799,8 @@ body::after {
   .form__input {
     font-size: .875rem
   }
-  .form__button:not(:last-child) {
-    margin-bottom: .625rem
+  .form__button {
+    margin-bottom: .5rem
   }
   .form__error {
     font-size: .625rem
@@ -2032,8 +2032,8 @@ body::after {
   .form__input {
     font-size: clamp(.875rem ,.8296370968rem + .2016129032vw ,1rem)
   }
-  .form__button:not(:last-child) {
-    margin-bottom: clamp(.625rem ,.625rem + 0 ,.625rem)
+  .form__button {
+    margin-bottom: clamp(.5rem ,.4546370968rem + .2016129032vw ,.625rem)
   }
   .form__error {
     font-size: clamp(.625rem ,.5796370968rem + .2016129032vw ,.75rem)
