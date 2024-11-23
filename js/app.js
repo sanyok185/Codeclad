@@ -1052,7 +1052,7 @@
                     formSent(form);
                 } else {
                     e.preventDefault();
-                    const url = "https://httpbin.org/post";
+                    const url = "https://api.hsforms.com/submissions/v3/integration/submit/141345224/53ecb49b-e5dd-4fe3-8e22-a356b975b08d";
                     const firstName = document.querySelector('input[name="firstName"]').value;
                     const lastName = document.querySelector('input[name="lastName"]').value;
                     const linkedinProfile = document.querySelector('input[name="formLinkedin"]').value;
